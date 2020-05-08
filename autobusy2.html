@@ -4,10 +4,11 @@
 </head>
 <style>
 #tak {visibility: hidden;}
+#tak2
 </style>
 <body>
   <h1>Rozkład autobusów</h1>
-<input type="button" onclick="loop();" value="kliknij tutaj"/>
+<input type="button" onclick="loop();" id="tak2" value="kliknij tutaj"/>
     <table id="tak" class="tablepress tablepress-id-1" border=1>
       <thead>
       <tr class="row-1">
@@ -136,6 +137,8 @@ function loop() {
     audio.play();
     var tak = document.getElementById("tak");
     tak.style.visibility="visible";
+    var tak2 = document.getElementById("tak2");
+    tak2.style.visibility="hidden";
 }
 </script>
 </body>
