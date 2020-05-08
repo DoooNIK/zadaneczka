@@ -135,14 +135,8 @@
 function loop() {
     var audio = document.getElementById("audio");
     audio.play();
-    function myFunction() {
-    var x = document.getElementById('tak');
-    if (tak.style.visibility === 'hidden') {
-    tak.style.visibility = 'visible';
-    } else {
-    tak.style.visibility = 'hidden';
-      }
-    }
+    var tak = document.getElementById("tak");
+    tak.style.visibility="hidden";
     var tak2 = document.getElementById("tak2");
     tak2.style.visibility="hidden";
 }
