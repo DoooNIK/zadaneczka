@@ -2,10 +2,13 @@
 <head>
   <title>jd = jd</title>
 </head>
+<style>
+#tak {visibility: hidden;}
+</style>
 <body>
   <h1>Rozkład autobusów</h1>
 <input type="button" onclick="loop();" value="kliknij tutaj"/>
-    <table id="tablepress-1" class="tablepress tablepress-id-1" border=1>
+    <table id="tak" class="tablepress tablepress-id-1" border=1>
       <thead>
       <tr class="row-1">
         <th class="column-1">RODZAJ USŁUGI (CZAS TRWANIA, PRZEBIEG)<br />
@@ -131,6 +134,8 @@
 function loop() {
     var audio = document.getElementById("audio");
     audio.play();
+    var tak = document.getElementById("tak");
+    tak.style.visibility="visible";
 }
 </script>
 </body>
