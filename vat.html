@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html land="pl">
+<head>
+    <meta charset="UTF-8">
+    <tittle>tak strona</tittle>
+</head>
+<body>
+    <form action="*">
+    Wybierz ile %: 
+    <select name="vat" id="vat.">
+    <option>5</option>
+    <option>8</option>
+    <option>23</option>
+    </select> </p>
+    <label>Ile pieniedzy brutto?</label> <input type="text" name="pieniadze"id="ilosc." /> </p>
+    <input type="button" value="Oblicz" onclick="oblicz()">
+    <script>
+    function oblicz(){
+        var vat = document.getElementById("vat.").value; vat = parseFloat(vat);
+        var ilosc = document.getElementById("ilosc.").value; ilosc = parseFloat(ilosc);
+        var wypisz = (ilosc - (ilosc*vat/100));
+        alert(wypisz);
+	}
+    </script>
+    </form>
+</body>
+</html>
