@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html land="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Sprawdz pesel</h1>
+    <form action="*" name="psl">
+        Z którego wieku pochodzi pesel?:
+        <input type="radio" name="wiek" value="XX"/>XX
+        <input type="radio" name="wiek" value="XXI" checked/>XXI
+        </select> </p>
+        <label>Wpisz pesel: </label> <input type="text" name="pesel"id="pesel." /> </p>
+    </form>
+    <input type="button" value="Oblicz" onclick="pesel()">
+    <script>
+        function pesel() {
+            var wiek2 = document.psl.wiek[0].checked;
+            var pesel2 = document.getElementById("pesel.").value;
+            var dlugosc2 = document.getElementById("pesel.").value.length;
+            var plec;
+            if (dlugosc2 == 11) {
+                var rok = parseFloat(pesel2.substr(0,2));
+                var msc = pesel2.substr(2,2);
+                var dn = pesel2.substr(4,2);
+                if ((pesel2.substr(9,1) % 2) == 0) {
+                    var plec = "Kobieta";
+                }
+                else {
+                    var plec = "Mężczyzna";
+                }
+                if (wiek2 == true) {
+                    alert(dn + "." + msc + "." + (1900+rok) + " płeć: " + plec);
+                }
+                else {
+                    alert(dn + "." + msc + "." + (2000+rok-20) + " płeć: " + plec);
+                }
+
+            }
+            else {
+                alert("zły pesel");
+            }
+        }
+    </script>
+</body>
+</html>
