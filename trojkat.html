@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html land="pl">
+<head>
+    <meta charset="UTF-8">
+    <tittle>oblicz se czy z odcinkow moze powstac trojkat</tittle>
+</head>
+<body>
+    <form action="*">
+    <label>wpisz 1 odcinek:</label> <input type="text" name="odc1"id="1" /> </p>
+    <label>wpisz 2 odcinek:</label> <input type="text" name="odc2"id="2" /> </p>
+    <label>wpisz 3 odcinek:</label> <input type="text" name="odc3"id="3" /> </p>
+    <input type="button" value="oblicz" onclick="oblicz()">
+    <script>
+    function oblicz(){
+        var liczba = document.getElementById("1").value; liczba = parseFloat(liczba);
+        var liczba2 = document.getElementById("2").value; liczba = parseFloat(liczba2);
+        var liczba3 = document.getElementById("3").value; liczba = parseFloat(liczba3);
+        var odp;
+        if ((liczba < liczba2+liczba3) && (liczba2 < liczba+liczba3) && (liczba3 < liczba + liczba2)) {
+            alert("tak");
+        }
+        else {
+            alert("nie");
+        }
+	}
+    </script>
+    </form>
+</body>
+</html>

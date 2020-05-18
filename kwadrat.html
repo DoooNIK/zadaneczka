@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html land="pl">
+<head>
+    <meta charset="UTF-8">
+    <tittle>oblicz se pole kwadratu</tittle>
+</head>
+<body>
+    <form action="*">
+    <label>wpisz se bok kwadratu:</label> <input type="text" name="bok"id="1" /> </p>
+    <input type="button" value="oblicz" onclick="oblicz()">
+    <script>
+    function oblicz(){
+        var liczba = document.getElementById("1").value; liczba = parseFloat(liczba);
+        var obwod = (liczba*4);
+        var pole = (liczba*liczba);
+        alert("obwod: " + obwod + " pole " + pole + " jednostek kwadratowych");
+	}
+    </script>
+    </form>
+</body>
+</html>
