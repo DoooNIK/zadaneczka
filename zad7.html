@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head>
+  <title>:)</title>
+</head>
+<body>
+    <form action="*">
+        <label>1 pole tekstowe</label> <input id="1" type="text" name="11" /> </p>
+        <label>2 pole tekstowe</label> <input id="2" type="text" name="22" /> </p>
+        <label>3 pole tekstowe</label> <input id="3" type="text" name="33" /> </p>
+        <input type="button" value="czesc" onclick="fajna_funkcja()">
+
+    </form>
+
+
+<script>
+    function fajna_funkcja() {
+        var jeden = document.getElementById("1").value.length;
+        var dwa = document.getElementById("2").value.length;
+        var trzy = document.getElementById("3").value.length;
+        if ((jeden && dwa && trzy) >= 2 && (jeden && dwa && trzy) <= 20) {
+            alert("poprawnie uzupełniono");
+        }
+        else {
+            alert("dobrze uzupełnij");
+        }
+    }
+</script>
+</body>
+
+</html>
